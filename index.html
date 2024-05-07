@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <link rel="stylesheet" href="css/output.css">
+
+</head>
+<body class="font-josefin">
+  <!-- Content Wrapper -->
+  <div class="min-h-screen bg-gradient-to-r from-white to-FFF4F4 flex">
+    <!-- Main Section -->
+    <div class="w-full sm:w-[70%] lg:w-[55%] sm:relative">
+      <!-- Overlay -->
+      <img class="hidden z-0 sm:block absolute size-full object-cover" src="images/bg-pattern-desktop.svg" alt="">
+      <!-- Content -->
+      <div class="relative min-h-full z-10 flex flex-col justify-center sm:py-10 sm:px-3 md:px-10 lg:px-20">
+        <!-- Header -->
+        <header class="py-10 px-5 sm:px-10">
+          <!-- Logo -->
+          <img class="w-[100px] sm:w-[158px]" src="images/logo.svg" alt="logo">
+        </header>
+        <!-- Image Hero Mobile -->
+        <img class="sm:hidden" src="images/hero-mobile.jpg" alt="image hero mobile">
+        <!-- Main -->
+        <main class="text-CE9898 py-20 px-10 space-y-5">
+          <!-- Title -->
+          <div class="flex flex-col items-center text-[40px] tracking-[0.65rem] sm:text-[64px] sm:tracking-[1.1rem] sm:items-start sm:-space-y-7">
+            <h1 class="font-light">WE'RE</h1>
+            <h1 class="font-semibold text-423A3A">COMING</h1>
+            <h1 class="font-semibold text-423A3A">SOON</h1>
+          </div>
+          <!-- Description -->
+          <div class="sm:max-w-[444px] text-center sm:text-left">
+            <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+          </div>
+          <!-- Input Wrapper -->
+          <form class="flex flex-col gap-1 sm:max-w-[444px]" id="form">
+            <!-- Custom Input Wrapper -->
+            <div class="border border-CE9898 rounded-full flex gap-2">
+              <!-- Input Wrapper -->
+              <div class="ms-4 grow flex"> 
+                <!-- Input -->
+                <input class="text-CE9898 bg-transparent w-full focus:outline-none" type="email" placeholder="Email Address" id="email">
+              </div>
+              <!-- Alert Icon Wrapper -->
+              <div class="invisible flex items-center" id="error-icon">
+                <!-- Alert Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><g fill="none" fill-rule="evenodd"><circle cx="12" cy="12" r="12" fill="#F96464"/><path fill="#FFF" fill-rule="nonzero" d="M13.256 6v9.056h-2V6h2zm-.944 12.464c-.384 0-.699-.104-.944-.312a1.027 1.027 0 0 1-.368-.824c0-.33.125-.608.376-.832.25-.224.563-.336.936-.336.373 0 .68.112.92.336.24.224.36.501.36.832 0 .341-.117.616-.352.824-.235.208-.544.312-.928.312z"/></g></svg>
+              </div>
+              <!-- Button Wrapper -->
+              <div class="bg-gradient-to-r from-F8BFBF to-EE8B8B rounded-full shadow-lg px-6 py-3 hover:cursor-pointer" id="submit">
+                <!-- Button Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l8.836 8.836L1 18.671"/></svg>
+              </div>
+            </div>
+            <!-- Error Message -->
+            <div class="ms-4 text-[13px] text-[#F96464] h-[28px]" id="warning"> </div>
+          </form>
+          
+        </main>
+      </div>
+    </div>
+    <!-- Image Hero Desktop -->
+    <div class="hidden sm:block sm:w-[30%] lg:w-[45%]">
+      <img class="size-full object-cover" src="images/hero-desktop.jpg" alt="image hero desktop">
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
